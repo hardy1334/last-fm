@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import $ from 'jquery';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 class App extends React.Component {
@@ -9,14 +10,34 @@ class App extends React.Component {
       artists: {},
       artistTracks: {},
       artistName: 'Cher',
+      search: [],
+      display: [],
       trackCount: {
         len: '',
       },
     };
   }
 
+  componentDidMount () {
+    $ ('#searchbox').hide ();
+    let items = JSON.parse (localStorage.getItem ('item'));
+
+    this.setState ({
+      display: items,
+    });
+    console.log (this.state.display);
+  }
+
   componentDidUpdate () {
     console.log (this.state.artistTracks);
+    let items = JSON.parse (localStorage.getItem ('item'));
+
+    if (items.length !== this.state.display.length) {
+      this.setState ({
+        display: items,
+      });
+    }
+    console.log (this.state.display);
   }
 
   onChange = e => {
@@ -51,10 +72,19 @@ class App extends React.Component {
         });
       });
 
-    let trackCount = {...this.state.trackCount};
+    /*let trackCount = {...this.state.trackCount};
     trackCount.len = Object.keys (this.state.artistTracks).length;
     this.setState ({trackCount});
-    console.log (this.state.trackCount.len);
+    console.log (this.state.trackCount.len);*/
+    //    localStorage.setItem ('artist', this.state.artistName);
+
+    this.state.display.unshift (this.state.artistName);
+    let uniqueArtists = [...new Set (this.state.display)];
+    localStorage.setItem ('item', JSON.stringify (uniqueArtists));
+  };
+
+  searchHistory = e => {
+    $ ('#searchbox').toggle ();
   };
 
   render () {
@@ -241,7 +271,25 @@ class App extends React.Component {
             onChange={this.onChange}
             value={this.state.artistName}
             name="artistName"
+            onClick={this.searchHistory}
           />
+          <div className="card" id="searchbox">
+            <span className="ml-5 pt-3">
+              <i className="far fa-clock" />
+              Search history
+            </span><hr />
+
+            {this.state.display.map (item => {
+              return (
+                <span>
+                  <p className="ml-5">{item}</p>
+                  <hr />
+                </span>
+              );
+            })}
+
+          </div>
+
           <br />
 
           <button

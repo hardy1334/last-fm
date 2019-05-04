@@ -18,15 +18,21 @@
   color: #aaa;
 }
 
-#title {
-  font-family: 'Cormorant Garamond', serif;
-  margin-left: 45%;
-}
-
 .bio {
   box-shadow: 15px 15px 15px rgba(0.1, 0.1, 0.1, 0.1);
 }
 
 #searchbox {
   box-shadow: 8px 8px 8px rgba(0.1, 0.1, 0.1, 0.1);
+}
+
+.navbar-brand {
+  float: none;
+}
+
+.navbar-header {
+  float: left;
+  text-align: center;
+  width: 100%;
+  font-family: 'Cormorant Garamond', serif;
 }

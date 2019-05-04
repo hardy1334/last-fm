@@ -4,16 +4,18 @@ import {Link, BrowserRouter} from 'react-router-dom';
 class Navbar extends Component {
   render () {
     return (
-      <nav className="navbar navbar-light bg-light">
+      <nav className="navbar navbar-default navbar-light bg-light">
 
         <BrowserRouter>
-
-          <Link className="navbar-brand" to="/" id="title">
-            <h3>
-              Artist Search
-            </h3>
-          </Link>
-
+          <div className="navbar-header">
+            <Link className="navbar-brand" to="/">
+              <center>
+                <h3>
+                  Artist Search
+                </h3>
+              </center>
+            </Link>
+          </div>
         </BrowserRouter>
 
       </nav>

@@ -45,9 +45,8 @@ class App extends React.Component {
         });
       })
       .catch (err => {
-        this.setState ({
-          unavailable: 'Please Enter Artist Name Correctly',
-        });
+        alert ('Please Enter a valid Artist name');
+        window.location.reload ();
       });
 
     // get artist tracks from last.fm api
@@ -63,9 +62,7 @@ class App extends React.Component {
         });
       })
       .catch (err => {
-        this.setState ({
-          unavailable: 'Please Enter Artist Name Correctly',
-        });
+        alert ('Please Enter a valid Artist name');
       });
 
     if (this.state.display) {
@@ -97,11 +94,20 @@ class App extends React.Component {
       <div>
 
         <h2 className="pb-3 pt-5">
-          Here are some results for {this.state.artists.name}
+          Here are some results for
+          {' '}
+          {this.state.artists
+            ? this.state.artists.name
+            : this.state.unavailable}
         </h2>
         <div className="card bio">
           <div className="card-title ml-3 mt-3">
-            <h3>{this.state.artists.name}'s Bio</h3>
+            <h3>
+              {this.state.artists
+                ? this.state.artists.name
+                : this.state.unavailable}
+              's Bio
+            </h3>
           </div>
           <div className="card-body ">
             <small>
@@ -182,6 +188,7 @@ class App extends React.Component {
               </span>
 
               <hr />
+
               {this.state.display
                 ? this.state.display.map ((item, id) => {
                     return (
@@ -205,7 +212,7 @@ class App extends React.Component {
           </div>
           <div className="mt-5">
             {this.state.artistName
-              ? <h2 className="mb-4">{this.state.artistName}'s Top 10 Songs</h2>
+              ? <h2 className="mb-4">{this.state.artistName}'s Top Songs</h2>
               : null}
 
             {this.state.artistTracks[0]

@@ -1,68 +1,22 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ This project shows information about the **artist** you searched with the help of <a href="https://www.last.fm/api">last.fm api</a>. It shows you **top 10 songs** of the artist you search along with **Stats, Similar Artists, Biography** of the artist you searched.
 
-## Available Scripts
+<h4>Make Sure to enter Correct Name of Artist to get results</h4>
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ ## Screenshots
+ 
+ <img src="https://user-images.githubusercontent.com/31733278/57185787-8fc80400-6eef-11e9-83de-6e4859ea9be4.png" alt="sc1"/>
+ 
+ <img src="https://user-images.githubusercontent.com/31733278/57185788-96ef1200-6eef-11e9-842a-b9a0193c157f.png" alt="sc2" />
+ 
+ <img src="https://user-images.githubusercontent.com/31733278/57185789-9e162000-6eef-11e9-97ed-af5d7b5caa7e.png"  alt="sc3" />
+ 
+ ## Technologies Used
+ 
+ * React Js
+ * Last.fm api
+ 
+ ## Setup
+ 
+ * First **Clone** this repository.
+ * After Cloning run `npm install` to install the dependencies required for the project.
+ * Start the server by `npm start` and now server will be live at **localhost:3000**

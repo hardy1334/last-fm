@@ -4,11 +4,11 @@
 
  ## Screenshots
  
- <img src="https://user-images.githubusercontent.com/31733278/57185787-8fc80400-6eef-11e9-83de-6e4859ea9be4.png" alt="sc1"/>
+ <img src="https://user-images.githubusercontent.com/31733278/57195617-61d7d380-6f72-11e9-8c30-e59ee7871d5d.png" alt="sc1"/>
  
- <img src="https://user-images.githubusercontent.com/31733278/57185788-96ef1200-6eef-11e9-842a-b9a0193c157f.png" alt="sc2" />
+ <img src="https://user-images.githubusercontent.com/31733278/57195619-69977800-6f72-11e9-9f26-c9044ec7e0e4.png" alt="sc2" />
  
- <img src="https://user-images.githubusercontent.com/31733278/57185789-9e162000-6eef-11e9-97ed-af5d7b5caa7e.png"  alt="sc3" />
+ <img src="https://user-images.githubusercontent.com/31733278/57195626-6f8d5900-6f72-11e9-9cac-006368a830b9.png"  alt="sc3" />
  
  ## Technologies Used
  
